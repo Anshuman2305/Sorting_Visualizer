@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Glitched Text (study of The Verge)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header class="header">
+	<h1 class="glitched p-4">Sorting Visualizer</h1>
+</header>
+
+<div class="container">
+        <div id="array-container">
+            <div id="array"></div>
+            <h5 id="no-algo-warning" class="display-none">No Algorithm Selected!</h5>
+        </div>
+        <div id="algo-container">
+            <button class="algo-btn">Bubble Sort</button>
+            <button class="algo-btn">Selection Sort</button>
+            <button class="algo-btn">Insertion Sort</button>
+            <button class="algo-btn">Merge Sort</button>
+            <button class="algo-btn">Quicksort</button>
+            <button class="algo-btn">Heapsort</button>
+            <button id="sort">Sort</button>
+        </div>
+        <div id="change-container">
+            <button id="randomize">Randomize</button>
+            <div id="sliders">
+                <div class="slider-container">
+                    <label>Array Size</label>
+                    <input type="range" id="size-slider" class="slider" autocomplete="off">
+                </div>
+                <div class="slider-container">
+                    <label>Speed</label>
+                    <input type="range" id="speed-slider" class="slider" autocomplete="off">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="assets/bubble-sort.js"></script>
+    <script src="assets/selection-sort.js"></script>
+    <script src="assets/insertion-sort.js"></script>
+    <script src="assets/merge-sort.js"></script>
+    <script src="assets/quicksort.js"></script>
+    <script src="assets/heapsort.js"></script>
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script  src="./assets/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
